@@ -5,6 +5,6 @@ app_name = 'face'
 
 urlpatterns = [
     path('recognition/', views.face_recognition, name='recognition'),
-    path('signin/', views.signin, name='signin')
-
+    path('signin/', views.signin, name='signin'),
+    path('signpicture/', views.signpicture, name='signpicture')
 ]

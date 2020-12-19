@@ -21,7 +21,7 @@ class User(models.Model):
 
 class Order(models.Model):
     order_id = models.AutoField(primary_key=True)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user_id = models.IntegerField()
     menu_name = models.CharField(max_length=30)
     category = models.CharField(max_length=15)
     order_date = models.DateField()
