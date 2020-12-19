@@ -156,7 +156,7 @@ def signin(request):
 def signpicture(request):
     if request.method == 'GET':
         query_set = User.objects.all()
-        serializer = UserSerialiㅎ(query_set, many=True)
+        serializer = UserSerializer(query_set, many=True)
         return Response(serializer.data)
 
     elif request.method == 'POST':
